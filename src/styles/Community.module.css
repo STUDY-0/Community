@@ -6,6 +6,32 @@
 .App::-webkit-scrollbar {
     display: none; /* 크롬, 사파리, 오페라, 엣지 */
 }
+
+.newPostContainer {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding-left: 4rem;
+    position: fixed;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.newPost {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    padding-left: 3rem;
+    position: fixed;
+}
+
+.newPostBtn {
+    width: 5.5rem;
+    height: 2.5rem;
+    background-color: #69B567;
+    border-radius: 0.5rem;
+}
 .post-container {
     width: 100%;
     height: auto;
@@ -13,7 +39,7 @@
     flex-flow: column;
     row-gap: 60px;
     align-items: center;
-    padding: 7rem 0 8rem 0;
+    padding: 8rem 0;
     overflow-y: scroll;
 
     -ms-overflow-style: none; /* 인터넷 익스플로러 */

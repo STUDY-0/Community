@@ -8,21 +8,26 @@ function Community() {
     <div className={styles.App}>
       <nav className={navStyles.nav}>
         <div className={navStyles['nav-container']}>
-          <a className={navStyles.logo} href="index.html">
+          <a className={navStyles.logo} href="/">
             <Image className={navStyles['logo-img']} src={logo} alt="Logo" />
           </a>
           <ul className={navStyles['nav-list']}>
             <li className={navStyles.community}>
-              <a href="community.html">Community</a>
+              <a href="Community">Community</a>
             </li>
             <li className={navStyles.mypage}>
-              <a href="myPage.html">My Page</a>
+              <a href="MyPage">My Page</a>
             </li>
           </ul>
         </div>
       </nav>
 
       <div className={styles['post-container']}>
+        <div className={styles.newPostContainer}>
+          <div className={styles.newPost}>
+              <button className={styles.newPostBtn}>POST</button>
+          </div>
+        </div>
         <div className={styles.post}>
           <h1 className={styles['post-title']}>React 스터디 하실 분 ~</h1>
           <p className={styles['post-writer']}>Hyewon Yang</p>
