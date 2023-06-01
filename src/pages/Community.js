@@ -8,6 +8,7 @@ function Community() {
   const [showModal, setShowModal] = useState(false);
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
+  const [roomID, setRoomID] = useState('');
 
   const openModal = () => {
     setShowModal(true);
@@ -20,6 +21,7 @@ function Community() {
     // Reset the title and content state variables
     setTitle('');
     setContent('');
+    setRoomID('');
     // Close the modal
     setShowModal(false);
   };
@@ -39,6 +41,14 @@ function Community() {
   };
 
   const wordCount = content.length;
+
+  const handleRoomIDChange = (e) => {
+    const inputValue = e.target.value;
+    if (inputValue.length <= 20) {
+      setRoomID(inputValue);
+    }
+  };
+
 
   return (
     <div className={styles.App}>
@@ -117,6 +127,12 @@ function Community() {
               onChange={handleContentChange}
             ></textarea>
             <span className={styles.counter}>({wordCount}/200)</span><br></br>
+            <input
+              type="text"
+              placeholder="방 ID"
+              value={roomID}
+              onChange={handleRoomIDChange}
+            />
             <div className={styles.buttonContainer}>
               <button type="submit">Submit</button>
             </div>
