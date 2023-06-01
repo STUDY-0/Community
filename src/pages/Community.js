@@ -129,7 +129,7 @@ function Community() {
             <span className={styles.counter}>({wordCount}/200)</span><br></br>
             <input
               type="text"
-              placeholder="방 ID"
+              placeholder="스터디룸 ID"
               value={roomID}
               onChange={handleRoomIDChange}
             />
