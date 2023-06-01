@@ -15,7 +15,7 @@
     padding-left: 4rem;
     position: fixed;
     position: absolute;
-    bottom: 3rem;
+    bottom: 3.5rem;
 }
 
 .newPost {
@@ -27,11 +27,12 @@
 }
 
 .newPostBtn {
-    width: 5.5rem;
-    height: 2.5rem;
+    width: 7rem;
+    height: 3rem;
     background-color: #69B567;
     border-radius: 0.5rem;
 }
+
 .post-container {
     width: 100%;
     height: auto;
@@ -117,5 +118,16 @@
         color: #999;
         font-size: 120%;
         margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    
+    .newPostContainer {
+        padding-left: 6rem;
+    }
+
+    .newPost {
+        padding-left: 6rem;
     }
 }
