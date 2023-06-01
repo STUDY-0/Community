@@ -44,7 +44,9 @@ function Community() {
 
   const handleRoomIDChange = (e) => {
     const inputValue = e.target.value;
-    if (inputValue.length <= 20) {
+    // Restrict input to English characters only
+    const englishRegex = /^[a-zA-Z]*$/;
+    if (englishRegex.test(inputValue) && inputValue.length <= 20) {
       setRoomID(inputValue);
     }
   };
